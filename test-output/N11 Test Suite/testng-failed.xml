@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [N11 Test Suite]">
+  <listeners>
+    <listener class-name="utils.Listeners.TestListener"/>
+    <listener class-name="utils.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="tests.ReactResendConfirmationEmailTest">
+        <methods>
+          <include name="TC_Negative_Verify_theError_messageDisplayed_whenUser_enterUnregistered_email"/>
+          <include name="TC_Negative_Verify_theError_messageDisplayed_whenUser_enterregistered_emailand_ClickonButton"/>
+          <include name="TC_Negative_Verify_theError_messageDisplayed_whenUser_shouldbe_ableToSend_PasswordLink"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ReactResendConfirmationEmailTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [N11 Test Suite] -->
