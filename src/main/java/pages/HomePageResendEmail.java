@@ -14,7 +14,7 @@ public class HomePageResendEmail extends BasePage {
     }
 
     //*********Page Variables*********
-    String baseURL = "http://app.beta.skillgigs.com/Resend/Confirmation";
+    String baseURL = "https://dev.beta.skillgigs.com/";
     
     //*********Page Methods*********
 
