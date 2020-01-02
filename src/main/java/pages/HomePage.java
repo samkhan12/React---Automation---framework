@@ -14,7 +14,7 @@ public class HomePage extends BasePage {
     }
 
     //*********Page Variables*********
-    String baseURL = "https://app.beta.skillgigs.com/SignUp";
+    String baseURL = "https://app.beta.skillgigs.com/SignUped";
     
     //*********Page Methods*********
 
