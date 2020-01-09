@@ -7,3 +7,5 @@ Cloned in new system
 
 ngrok and localtunnel
 Installed in new system test
+
+Installed Automation framework in new system
