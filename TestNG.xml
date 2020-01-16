@@ -8,7 +8,7 @@
     <test name="LoginTest">
     
         <classes> 
-                <class name="tests.ReactResendConfirmationEmailTest"/>                     
+                <class name="tests.ReactSetPreferencesTest"/>                     
         </classes>
     </test>
 </suite> 

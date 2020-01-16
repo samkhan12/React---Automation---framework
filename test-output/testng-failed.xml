@@ -7,17 +7,13 @@
   </listeners>
   <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="tests.ReactResendConfirmationEmailTest">
+      <class name="tests.ReactSetPreferencesTest">
         <methods>
-          <include name="TC_Negative_Verify_theError_messageDisplayed_whenUser_enterUnregistered_email"/>
-          <include name="TC_Negative_Verify_theError_messageDisplayed_whenEmail_IsEmpty"/>
-          <include name="TC_Negative_Verify_theError_messageDisplayed_whenUser_EnterInvalid_email"/>
-          <include name="TC_Negative_Verify_theError_messageDisplayed_whenUser_enterregistered_emailand_ClickonButton"/>
-          <include name="TC_Negative_Verify_theError_messageDisplayed_whenUser_shouldbe_ableToSend_PasswordLink"/>
+          <include name="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.ReactResendConfirmationEmailTest -->
+      </class> <!-- tests.ReactSetPreferencesTest -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [N11 Test Suite] -->

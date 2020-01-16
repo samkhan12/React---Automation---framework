@@ -1,14 +1,16 @@
 package tests;
 
-import org.apache.log4j.BasicConfigurator;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import org.apache.log4j.BasicConfigurator;
+import org.testng.annotations.Test;
+
 import pages.HomePage;
-import pages.ReactSignIn;
+import pages.ReactSetPreferences;
 import utils.ExtentReports.ExtentTestManager;
 
 
-public class ReactSignInTest extends BaseTest {
+
+public class ReactSetPreferencesTest extends BaseTest {
 	
 	
 
@@ -17,42 +19,77 @@ public class ReactSignInTest extends BaseTest {
     // 2) We send these driver and wait variables to the page class with below declaration
     // 3) super () method in page class transfer the driver and wait variables values to the BasePage class.
 	
-	@Test (priority = 0, description="Verify the error message displayed when user enter invalid  username and invalid password")
-	public void TC_Negative_Verify_InvalidUserName_InvalidPassword () throws InterruptedException {
+	
+	@Test (priority = 0, description="TC1 -- Set Preferences -- Verify the page open is set preferences page")
+    public void TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page () throws InterruptedException {
 		
 		
 		BasicConfigurator.configure();
 	    
 
         //ExtentReports Description
-        ExtentTestManager.getTest().setDescription("Verify the error message displayed when user enter invalid  username and invalid password");
+        ExtentTestManager.getTest().setDescription("TC1 -- Set Preferences -- Verify the page open is set preferences page");
         
         //*************PAGE INSTANTIATIONS*************
         HomePage homePage = new HomePage(driver,wait);
  
-        ReactSignIn SignInPage = new ReactSignIn(driver,wait);
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
         //*************PAGE METHODS********************
    
         homePage.goToSkillGigs();
-       
-        
-        Thread.sleep(5000);
-        driver.findElement(By.xpath("/html/body/div[7]/div")).click();
-        
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("/html/body/div[7]/div/div[2]/ul/li[2]/label")).click();
-        
-        //Login to skillgigs
-        SignInPage.loginToSkillGigs("tc@@domain.web", "qwerty");
      
         //*************ASSERTIONS***********************
-        Thread.sleep(2000);
         
-        SignInPage.verifyInvalidUsenameInvalidpwd("You must enter valid email");
+        SetPref.verifyPageTitle("Find your gigs");
         
 	 }
+
+	@Test (priority = 1, description="TC2 -- Set Preferences -- Verify the Login with number pop-up displayed on tap 'I'm Nurse-Recruiter' link")
+    public void TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+        //ExtentReports Description
+        ExtentTestManager.getTest().setDescription("TC1 -- Set Preferences -- Verify the Login with number pop-up displayed on tap 'I'm Nurse-Recruiter' link");
+        
+        //*************PAGE INSTANTIATIONS*************
+        HomePage homePage = new HomePage(driver,wait);
+ 
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
+        //*************PAGE METHODS********************
+   
+        homePage.goToSkillGigs();
+        SetPref.clickRecruiterLink();
+        //*************ASSERTIONS***********************
+        
+        SetPref.verifyLoginPopUp("Start with your mobile number");
+	 }
 	
-	
+	@Test (priority = 2, description="TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are 'Gig Type (select one or both)','State Licensed Location' and 'Discipline/Title'")
+    public void TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+        //ExtentReports Description
+        ExtentTestManager.getTest().setDescription("TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are 'Gig Type (select one or both)','State Licensed Location' and 'Discipline/Title'");
+        
+        //*************PAGE INSTANTIATIONS*************
+        HomePage homePage = new HomePage(driver,wait);
+ 
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
+        //*************PAGE METHODS********************
+   
+        homePage.goToSkillGigs();
+        //*************ASSERTIONS***********************
+        
+        SetPref.verifyTitles("Gig Type (select one or both)", "State Licensed Location", "Discipline/Title");
+        
+	 }
+	/*
 		@Test (priority = 1, description="Verify the error message displayed when user enter invalid  username and valid password")
 	    public void TC_Negative_Verify_InvalidUserName_validPassword () throws InterruptedException {
 		    BasicConfigurator.configure();
