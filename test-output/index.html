@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-N11_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">N11 Test Suite</span>
+              <span class="suite-name border-passed">N11 Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-N11_Test_Suite" class="hide-methods failed suite-N11_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-N11_Test_Suite -->
-                      <a href="#" panel-name="suite-N11_Test_Suite" class="show-methods failed suite-N11_Test_Suite"> (show)</a> <!-- show-methods failed suite-N11_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-N11_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-N11_Test_Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,6 +110,11 @@
                         <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink">TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-N11_Test_Suite -->
                   </li>
                 </ul>
@@ -136,29 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-N11_Test_Suite" class="panel N11_Test_Suite">
-          <div class="suite-N11_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.ReactSetPreferencesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault">
-                  </a> <!-- TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault -->
-                  <span class="method-name">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Discipline/Titl] but found [Discipline/Title]
-	at pages.ReactSetPreferences.verifyTitles(ReactSetPreferences.java:49)
-	at tests.ReactSetPreferencesTest.TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault(ReactSetPreferencesTest.java:89)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are 'Gig Type (select one or both)','State Licensed Location' and 'Discipline/Title')                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-N11_Test_Suite-class-failed -->
           <div class="suite-N11_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,6 +149,15 @@
                   <span class="method-name">TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink</span>
                   <em>
 (TC2 -- Set Preferences -- Verify the Login with number pop-up displayed on tap 'I'm Nurse-Recruiter' link)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault">
+                  </a> <!-- TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault -->
+                  <span class="method-name">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</span>
+                  <em>
+(TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are 'Gig Type (select one or both)','State Licensed Location' and 'Discipline/Title')                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,20 +222,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page')
 data.setCell(0, 2, 'tests.ReactSetPreferencesTest')
-data.setCell(0, 3, 4218);
+data.setCell(0, 3, 4933);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink')
 data.setCell(1, 2, 'tests.ReactSetPreferencesTest')
-data.setCell(1, 3, 1387);
+data.setCell(1, 3, 3463);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault')
 data.setCell(2, 2, 'tests.ReactSetPreferencesTest')
-data.setCell(2, 3, 947);
+data.setCell(2, 3, 3063);
 window.suiteTableData['N11_Test_Suite']= { tableData: data, tableDiv: 'times-div-N11_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-N11_Test_Suite">
               </div> <!-- times-div-N11_Test_Suite -->
             </div> <!-- times-div -->
@@ -291,21 +268,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page</span>
-                <span class="method-start">9978 ms</span>
+                <span class="method-start">10663 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink</span>
-                <span class="method-start">14201 ms</span>
+                <span class="method-start">15601 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</span>
-                <span class="method-start">15589 ms</span>
+                <span class="method-start">19067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">16981 ms</span>
+                <span class="method-start">22133 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
