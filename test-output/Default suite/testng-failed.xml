@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ReactSignInBrowser">
+      <class name="tests.ReactSetPreferencesTest">
         <methods>
+          <include name="TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect"/>
+          <include name="TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page"/>
+          <include name="TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink"/>
+          <include name="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault"/>
+          <include name="TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType"/>
+          <include name="TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit"/>
+          <include name="TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe"/>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="TC_Negative_Verify_InvalidUserName_InvalidPassword"/>
+          <include name="TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType"/>
         </methods>
-      </class> <!-- tests.ReactSignInBrowser -->
+      </class> <!-- tests.ReactSetPreferencesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
