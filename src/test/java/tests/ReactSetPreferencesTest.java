@@ -2,6 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 import org.apache.log4j.BasicConfigurator;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -55,12 +56,10 @@ public class ReactSetPreferencesTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("TC1 -- Set Preferences -- Verify the Login with number pop-up displayed on tap 'I'm Nurse-Recruiter' link");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePage homePage = new HomePage(driver,wait);
  
         ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
         //*************PAGE METHODS********************
    
-        homePage.goToSkillGigs();
         SetPref.clickRecruiterLink();
         //*************ASSERTIONS***********************
         
@@ -78,16 +77,140 @@ public class ReactSetPreferencesTest extends BaseTest {
         ExtentTestManager.getTest().setDescription("TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are 'Gig Type (select one or both)','State Licensed Location' and 'Discipline/Title'");
         
         //*************PAGE INSTANTIATIONS*************
-        HomePage homePage = new HomePage(driver,wait);
+ 
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
+       
+        //*************PAGE METHODS********************
+        Thread.sleep(3000);
+        SetPref.clickCross();
+   
+        //*************ASSERTIONS***********************
+ 
+
+        SetPref.verifyTitles("Gig Type (select one or both)", "State Licensed Location", "Discipline/Title");
+        
+	 }
+	
+	
+	@Test (priority = 3, description="TC4 -- Set Preferences -- Verify the user should be able to select permanent gig type")
+    public void TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+        //ExtentReports Description
+        ExtentTestManager.getTest().setDescription("TC4 -- Set Preferences -- Verify the user should be able to select permanent gig type");
+        
+        //*************PAGE INSTANTIATIONS*************
  
         ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
         //*************PAGE METHODS********************
    
-        homePage.goToSkillGigs();
+        SetPref.clickPermanentGig();
+        
         //*************ASSERTIONS***********************
         
-        SetPref.verifyTitles("Gig Type (select one or both)", "State Licensed Location", "Discipline/Title");
+        SetPref.verifyPermanentGig("State Licensed Location OR Any Location");
         
+	 }
+	
+	@Test (priority = 4, description="TC5 -- Set Preferences -- Verify the user should be able to deselect both gig type")
+    public void TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+        //ExtentReports Description
+        ExtentTestManager.getTest().setDescription("TC5 -- Set Preferences -- Verify the user should be able to deselect both gig type");
+        
+        //*************PAGE INSTANTIATIONS*************
+ 
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
+        //*************PAGE METHODS********************
+   
+        SetPref.deselectGig();
+        
+        //*************ASSERTIONS***********************
+        
+        SetPref.verifyDeselectGig("Any Location");
+        
+	 }
+	
+	@Test (priority = 5, description="TC6 -- Set Preferences -- Verify the user should be able to set state licensed location by edit")
+    public void TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+        //ExtentReports Description
+        ExtentTestManager.getTest().setDescription("TC6 -- Set Preferences -- Verify the user should be able to set state licensed location by edit");
+        
+        //*************PAGE INSTANTIATIONS*************
+ 
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
+        //*************PAGE METHODS********************
+   
+        SetPref.enterLocation("Rapid City, South Dakota");
+     
+        Thread.sleep(3000);
+        SetPref.clickCancel();
+        //driver.findElement(By.xpath("//*[@id=\"react-autowhatever-1\"]/ul")).click();
+        
+        //*************ASSERTIONS***********************
+        
+
+       // SetPref.verifylocation("Rapid City, South Dakota");
+	 }
+	
+	
+
+	@Test (priority = 6, description="TC7 -- Set Preferences -- Verify the user should be able to set state licensed location by auto-detect location button")
+    public void TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+        //ExtentReports Description
+        ExtentTestManager.getTest().setDescription("TC7 -- Set Preferences -- Verify the user should be able to set state licensed location by auto-detect location button");
+        
+        //*************PAGE INSTANTIATIONS*************
+ 
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
+        //*************PAGE METHODS********************
+   
+        SetPref.detectLocation();
+        
+        //*************ASSERTIONS***********************
+        
+
+        //SetPref.verifylocationDetect("Central Delhi, Delhi");
+	 }
+	
+
+	@Test (priority = 7, description="TC9 -- Set Preferences -- Verify the user should be able to set Discipline/Title")
+    public void TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+        //ExtentReports Description
+        ExtentTestManager.getTest().setDescription("TC9 -- Set Preferences -- Verify the user should be able to set Discipline/Title");
+        
+        //*************PAGE INSTANTIATIONS*************
+ 
+        ReactSetPreferences SetPref = new ReactSetPreferences(driver,wait);
+        //*************PAGE METHODS********************
+   
+        SetPref.selectDiscipline();
+        
+        //*************ASSERTIONS***********************
+        SetPref.verifyDiscipline("Nursing");
+
 	 }
 	/*
 		@Test (priority = 1, description="Verify the error message displayed when user enter invalid  username and valid password")

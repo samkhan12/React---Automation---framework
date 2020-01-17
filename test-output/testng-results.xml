@@ -1,29 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-16T02:57:59 GMT-08:00" name="N11 Test Suite" finished-at="2020-01-16T02:58:21 GMT-08:00" duration-ms="22152">
+  <suite started-at="2020-01-17T05:17:34 GMT-08:00" name="N11 Test Suite" finished-at="2020-01-17T05:18:02 GMT-08:00" duration-ms="27611">
     <groups>
     </groups>
-    <test started-at="2020-01-16T02:57:59 GMT-08:00" name="LoginTest" finished-at="2020-01-16T02:58:21 GMT-08:00" duration-ms="22152">
+    <test started-at="2020-01-17T05:17:34 GMT-08:00" name="LoginTest" finished-at="2020-01-17T05:18:02 GMT-08:00" duration-ms="27611">
       <class name="tests.ReactSetPreferencesTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReactSetPreferencesTest@77f1baf5]" started-at="2020-01-16T02:57:59 GMT-08:00" name="setup" finished-at="2020-01-16T02:58:10 GMT-08:00" duration-ms="10632" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:17:34 GMT-08:00" name="setup" finished-at="2020-01-17T05:17:44 GMT-08:00" duration-ms="9835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page()[pri:0, instance:tests.ReactSetPreferencesTest@77f1baf5]" started-at="2020-01-16T02:58:10 GMT-08:00" name="TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page" description="TC1 -- Set Preferences -- Verify the page open is set preferences page" finished-at="2020-01-16T02:58:15 GMT-08:00" duration-ms="4933" status="PASS">
+        <test-method signature="TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page()[pri:0, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:17:44 GMT-08:00" name="TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page" description="TC1 -- Set Preferences -- Verify the page open is set preferences page" finished-at="2020-01-17T05:17:49 GMT-08:00" duration-ms="5022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page -->
-        <test-method signature="TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink()[pri:1, instance:tests.ReactSetPreferencesTest@77f1baf5]" started-at="2020-01-16T02:58:15 GMT-08:00" name="TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink" description="TC2 -- Set Preferences -- Verify the Login with number pop-up displayed on tap &#039;I&#039;m Nurse-Recruiter&#039; link" finished-at="2020-01-16T02:58:18 GMT-08:00" duration-ms="3463" status="PASS">
+        <test-method signature="TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink()[pri:1, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:17:49 GMT-08:00" name="TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink" description="TC2 -- Set Preferences -- Verify the Login with number pop-up displayed on tap &#039;I&#039;m Nurse-Recruiter&#039; link" finished-at="2020-01-17T05:17:49 GMT-08:00" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink -->
-        <test-method signature="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault()[pri:2, instance:tests.ReactSetPreferencesTest@77f1baf5]" started-at="2020-01-16T02:58:18 GMT-08:00" name="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault" description="TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are &#039;Gig Type (select one or both)&#039;,&#039;State Licensed Location&#039; and &#039;Discipline/Title&#039;" finished-at="2020-01-16T02:58:21 GMT-08:00" duration-ms="3063" status="PASS">
+        <test-method signature="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault()[pri:2, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:17:49 GMT-08:00" name="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault" description="TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are &#039;Gig Type (select one or both)&#039;,&#039;State Licensed Location&#039; and &#039;Discipline/Title&#039;" finished-at="2020-01-17T05:17:52 GMT-08:00" duration-ms="3192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ReactSetPreferencesTest@77f1baf5]" started-at="2020-01-16T02:58:21 GMT-08:00" name="teardown" finished-at="2020-01-16T02:58:21 GMT-08:00" duration-ms="1" status="PASS">
+        <test-method signature="TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType()[pri:3, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:17:52 GMT-08:00" name="TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType" description="TC4 -- Set Preferences -- Verify the user should be able to select permanent gig type" finished-at="2020-01-17T05:17:53 GMT-08:00" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType -->
+        <test-method signature="TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType()[pri:4, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:17:53 GMT-08:00" name="TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType" description="TC5 -- Set Preferences -- Verify the user should be able to deselect both gig type" finished-at="2020-01-17T05:17:53 GMT-08:00" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType -->
+        <test-method signature="TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit()[pri:5, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:17:53 GMT-08:00" name="TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit" description="TC6 -- Set Preferences -- Verify the user should be able to set state licensed location by edit" finished-at="2020-01-17T05:18:01 GMT-08:00" duration-ms="8463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit -->
+        <test-method signature="TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect()[pri:6, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:18:01 GMT-08:00" name="TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect" description="TC7 -- Set Preferences -- Verify the user should be able to set state licensed location by auto-detect location button" finished-at="2020-01-17T05:18:01 GMT-08:00" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect -->
+        <test-method signature="TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe()[pri:7, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:18:01 GMT-08:00" name="TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe" description="TC9 -- Set Preferences -- Verify the user should be able to set Discipline/Title" finished-at="2020-01-17T05:18:01 GMT-08:00" duration-ms="190" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Nursing] but found [Select Discipline]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Nursing] but found [Select Discipline]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at pages.ReactSetPreferences.verifyDiscipline(ReactSetPreferences.java:140)
+at tests.ReactSetPreferencesTest.TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe(ReactSetPreferencesTest.java:212)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ReactSetPreferencesTest@2df3b89c]" started-at="2020-01-17T05:18:02 GMT-08:00" name="teardown" finished-at="2020-01-17T05:18:02 GMT-08:00" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

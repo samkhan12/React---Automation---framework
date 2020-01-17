@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-N11_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">N11 Test Suite</span>
+              <span class="suite-name border-failed">N11 Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-N11_Test_Suite" class="hide-methods failed suite-N11_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-N11_Test_Suite -->
+                      <a href="#" panel-name="suite-N11_Test_Suite" class="show-methods failed suite-N11_Test_Suite"> (show)</a> <!-- show-methods failed suite-N11_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-N11_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe">TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-N11_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +129,26 @@
                         <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType">TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType">TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit">TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ReactSetPreferencesTest" class="method navigator-link" hash-for-method="TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect">TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-N11_Test_Suite -->
                   </li>
                 </ul>
@@ -127,6 +161,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-N11_Test_Suite" class="panel N11_Test_Suite">
+          <div class="suite-N11_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ReactSetPreferencesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe">
+                  </a> <!-- TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe -->
+                  <span class="method-name">TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Nursing] but found [Select Discipline]
+	at pages.ReactSetPreferences.verifyDiscipline(ReactSetPreferences.java:140)
+	at tests.ReactSetPreferencesTest.TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe(ReactSetPreferencesTest.java:212)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC9 -- Set Preferences -- Verify the user should be able to set Discipline/Title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-N11_Test_Suite-class-failed -->
           <div class="suite-N11_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -158,6 +215,42 @@
                   <span class="method-name">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</span>
                   <em>
 (TC3 -- Set Preferences -- Verify Set preferences displayed three fields in default are 'Gig Type (select one or both)','State Licensed Location' and 'Discipline/Title')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType">
+                  </a> <!-- TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType -->
+                  <span class="method-name">TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType</span>
+                  <em>
+(TC4 -- Set Preferences -- Verify the user should be able to select permanent gig type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType">
+                  </a> <!-- TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType -->
+                  <span class="method-name">TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType</span>
+                  <em>
+(TC5 -- Set Preferences -- Verify the user should be able to deselect both gig type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit">
+                  </a> <!-- TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit -->
+                  <span class="method-name">TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit</span>
+                  <em>
+(TC6 -- Set Preferences -- Verify the user should be able to set state licensed location by edit)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect">
+                  </a> <!-- TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect -->
+                  <span class="method-name">TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect</span>
+                  <em>
+(TC7 -- Set Preferences -- Verify the user should be able to set state licensed location by auto-detect location button)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,24 +311,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page')
+data.setCell(0, 1, 'TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit')
 data.setCell(0, 2, 'tests.ReactSetPreferencesTest')
-data.setCell(0, 3, 4933);
+data.setCell(0, 3, 8463);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink')
+data.setCell(1, 1, 'TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page')
 data.setCell(1, 2, 'tests.ReactSetPreferencesTest')
-data.setCell(1, 3, 3463);
+data.setCell(1, 3, 5022);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault')
 data.setCell(2, 2, 'tests.ReactSetPreferencesTest')
-data.setCell(2, 3, 3063);
+data.setCell(2, 3, 3192);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe')
+data.setCell(3, 2, 'tests.ReactSetPreferencesTest')
+data.setCell(3, 3, 190);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink')
+data.setCell(4, 2, 'tests.ReactSetPreferencesTest')
+data.setCell(4, 3, 146);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType')
+data.setCell(5, 2, 'tests.ReactSetPreferencesTest')
+data.setCell(5, 3, 121);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType')
+data.setCell(6, 2, 'tests.ReactSetPreferencesTest')
+data.setCell(6, 3, 104);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect')
+data.setCell(7, 2, 'tests.ReactSetPreferencesTest')
+data.setCell(7, 3, 70);
 window.suiteTableData['N11_Test_Suite']= { tableData: data, tableDiv: 'times-div-N11_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-N11_Test_Suite">
               </div> <!-- times-div-N11_Test_Suite -->
             </div> <!-- times-div -->
@@ -268,19 +381,41 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC1_Positive_SP_Verify_PageOpen_IsSetPerefences_Page</span>
-                <span class="method-start">10663 ms</span>
+                <span class="method-start">9845 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC2_Positive_SP_Verify_LoginPage_ShouldbeDisplayed_OnclickRecruiterLink</span>
-                <span class="method-start">15601 ms</span>
+                <span class="method-start">14874 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault</span>
-                <span class="method-start">19067 ms</span>
+                <span class="method-start">15022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC4_Positive_SP_Verify_userShould_beAbleTo_SelectPermanent_GigType</span>
+                <span class="method-start">18216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC5_Positive_SP_Verify_userShould_beAbleTo_DeselectBoth_GigType</span>
+                <span class="method-start">18322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC6_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByEdit</span>
+                <span class="method-start">18444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC7_Positive_SP_Verify_userShould_beAbleto_SetStateLicensed_LocationByAutoDetect</span>
+                <span class="method-start">26909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe</span>
+                <span class="method-start">26980 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">22133 ms</span>
+                <span class="method-start">27595 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,7 +9,7 @@
     <classes>
       <class name="tests.ReactSetPreferencesTest">
         <methods>
-          <include name="TC3_Positive_SP_Verify_SetPreferences_DisplayedThreeFields_InDefault"/>
+          <include name="TC8_Positive_SP_Verify_userShould_beAbleto_SetDisciplibe"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
