@@ -1,11 +1,11 @@
 # SkillGigs.React.Automation
-ExtentReports 2.41.2 
-React Site Link: https://app.beta.skillgigs.com/
+* ExtentReports 2.41.2 
+* React Site Link: https://app.beta.skillgigs.com/
 
-Github Webhook Push Tested
-Cloned in new system
+* Github Webhook Push Tested
+* Cloned in new system
 
-ngrok and localtunnel
-Installed in new system test
+* ngrok and localtunnel
+* Installed in new system test
 
-Installed Automation framework in new Systems
+* Installed Automation framework in new Systems
