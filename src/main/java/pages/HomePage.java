@@ -14,7 +14,7 @@ public class HomePage extends BasePage {
     }
 
     //*********Page Variables*********
-    String baseURL = "http://demo.guru99.com/test/newtours/";
+    String baseURL = "http://the-internet.herokuapp.com/";
     
     //*********Page Methods*********
 
