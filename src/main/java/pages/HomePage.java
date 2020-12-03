@@ -14,7 +14,7 @@ public class HomePage extends BasePage {
     }
 
     //*********Page Variables*********
-    String baseURL = "http://pwa.swipefox.health/";
+    String baseURL = "http://demo.guru99.com/test/newtours/";
     
     //*********Page Methods*********
 
